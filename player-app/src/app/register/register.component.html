@@ -1,0 +1,13 @@
+<form #form="ngForm" (submit)="onSubmit(form)" >
+
+    <div class="mb-3">
+      <label class="form-label">Player Name</label>
+      <input class="form-control" name="PName" #PName="ngModel" [(ngModel)]="objp.formData.PName">    
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Player Team</label>
+        <input class="form-control" name="PTeam" #PTeam="ngModel" [(ngModel)]="objp.formData.PTeam">        
+    </div>
+      
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
